@@ -7,7 +7,9 @@
     "build": "rimraf dist && babel src -d dist",
     "serve": "npm run build && node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "nodemon -w src --exec npm run serve"
+    "watch": "nodemon -w src --exec npm run serve",
+    "fix": "eslint src --fix",
+    "lint": "eslint src"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,8 @@
     "@babel/core": "^7.20.12",
     "@babel/node": "^7.20.7",
     "@babel/preset-env": "^7.20.2",
+    "eslint": "^8.33.0",
+    "eslint-config-airbnb-base": "^15.0.0",
     "nodemon": "^2.0.20",
     "rimraf": "^4.1.2"
   },
