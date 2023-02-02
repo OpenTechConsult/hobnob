@@ -18,6 +18,11 @@
   },
   "homepage": "https://github.com/OpenTechConsult/hobnob#readme",
   "devDependencies": {
-    "@babel/cli": "^7.20.7"
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/node": "^7.20.7"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1"
   }
 }
